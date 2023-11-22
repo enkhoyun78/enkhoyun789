@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>폼 연습</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .bg-1 {background-color: rgb(253, 208, 216);
+        }
+    .container-fluid{
+            padding-top: 40px; 
+            padding-bottom: 40px;   
+            padding-left: 50px;    
+                
+        }
+        .bg-2{
+            background-color: rgb(253, 190, 212);
+        }
+        .bg-3{
+            background-color: rgb(224, 165, 186);
+        }
+        .bg-4{
+            background-color: rgb(185, 127, 148);
+        }
+        .bg-5{
+            background-color: rgb(173, 110, 132);
+        }
+        body{
+            font-size: 15px;
+        }
+    </style>
+    <body>
+        <div class="container-fluid bg-1">
+        <form action="submission.html">
+            <label for="fname">First name: </label><br>
+            <input type="text" id="fname"><br>
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    <div class="container-fluid bg-2">
+    <form>
+            <h2>좋아하는 프로그레밍 랭귀지는?</h2>
+            <input type="radio" id="html" name=" fav_language" value="html"><label for="html"></label>HTML<br>
+            <input type="radio" id="css" name=" fav_language" value="css"><label for="css"></label>CSS<br>
+            <input type="radio"  id="javascript" name=" fav_language" value="javascript"><label for="javascript"></label>JavaScript<br>
+        </form>
+    </div>
+    <div class="container-fluid bg-3">
+        <form>
+        <h2>What do you have?</h2>
+        <input type="checkbox">Car<br>
+        <input type="checkbox">Bike<br>
+        <input type="checkbox">Boat<br>
+        </form>
+    </div>
+    <div class="container-fluid bg-4">
+        <form>
+        <h2>Choose a car</h2>
+        <select size="4" multiple>
+            <option>Volvo</option>
+            <option>Saab</option>
+            <option>Fiat</option>
+            <option>Audi</option>
+        </select>
+        </form>
+    </div>
+    <div class="container-fluid bg-5">
+        <form>
+            <h2>의견을 제출해 주세요.</h2>
+            <textarea rows="5" cols="50"></textarea>
+            <button type="button" onclick="alert('안녕^^')">Click Me!</button>
+        </form>
+
+    </div>
+
+    </body>
+</head>
